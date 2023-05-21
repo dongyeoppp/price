@@ -1,7 +1,7 @@
 def shopping(shop_file):
     shop_dict = {}
 
-    with open(code_path / shop_file, mode='r', encoding='utf-8') as f:    
+    with open(data_path / shop_file, mode='r', encoding='utf-8') as f:    
       for line in f:
         price_of_goods = line.strip().split() 
         if price_of_goods != []:      
